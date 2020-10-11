@@ -1,6 +1,8 @@
 var imageAddr = "https://besthqwallpapers.com/img/original/50555/american-wirehair-cat-4k-pets-cute-animals-cats.jpg"; 
 var downloadSize = 2430649 ; //bytes
 
+chrome.browserAction.setBadgeBackgroundColor({color: "#20B2AA"});
+
 var timer = setInterval(MeasureConnectionSpeed, 10000);
 
 
@@ -36,6 +38,6 @@ function MeasureConnectionSpeed() {
         }else{
             chrome.browserAction.setBadgeText({text: speedMbps + 'M'});    
         }
-        download = null;
     }
+    download = null;
 }        
