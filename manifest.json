@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name":"Download Speed Tracker",
+    "version":"1.0",
+    "description":"Monitor the download speed",
+    
+    "browser_action":{
+    },
+
+    "permissions":[
+        "background"
+    ],
+
+ 
+    "background":{
+        "scripts":["background.js"],
+        "persistent": true
+    }
+}
