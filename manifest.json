@@ -11,6 +11,11 @@
         "128":"icons/icon128.png"
     },
 
+    "options_ui": {
+        "page": "src/options.html",
+        "open_in_tab": true
+      },
+
     "browser_action":{
         "default_icon":{
             "16":"icons/icon16.png",
@@ -19,12 +24,13 @@
     },
 
     "permissions":[
-        "background"
+        "background",
+        "storage"
     ],
 
  
     "background":{
-        "scripts":["background.js"],
+        "scripts":["src/background.js"],
         "persistent": true
     }
 }
